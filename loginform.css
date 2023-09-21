@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('https://wallpaperaccess.com/full/7485384.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.loginform{
+    background-color: white;
+    width: 30%;
+    height: 70%;
+    margin: 7% auto;
+    padding: 25px 18px;
+    background: transparent;
+}
+@media screen and (max-width=600px)
+{
+.loginform{
+
+    width: 90%;
+    margin: 35% auto;
+
+
+}
+}
