@@ -1,16 +1,19 @@
 body{
     margin: 0%;
-    background-color:rgb(39, 37, 37);
+    background-color:rgb(56, 43, 43);
     
 }
 .row{
     height: 500px;
+    row-gap: 100%;
     
 }
 .col{
     align-items: center;
 
 }
-.col-6 {
+.col{
     height: 50px;
+    color: yellow;
+    
 }

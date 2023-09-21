@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url('https://wallpaperaccess.com/full/7485384.jpg');
+    background-image: url('https://images.hdqwalls.com/wallpapers/forza-horizon-5-game-4k-uj.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
@@ -11,10 +11,11 @@ body{
 .loginform{
     background-color: white;
     width: 30%;
-    height: 70%;
+    height: 40%;
     margin: 7% auto;
     padding: 25px 18px;
     background: transparent;
+    position: center;
 }
 @media screen and (max-width=600px)
 {
