@@ -1,0 +1,16 @@
+body{
+    margin: 0%;
+    background-color:rgb(39, 37, 37);
+    
+}
+.row{
+    height: 500px;
+    
+}
+.col{
+    align-items: center;
+
+}
+.col-6 {
+    height: 50px;
+}
