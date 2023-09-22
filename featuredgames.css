@@ -27,12 +27,14 @@ h3{
 .carousal-container {
     box-sizing: border-box;
     display: grid;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
-    padding: 10%;
+    padding: 5%;
     place-items: center;
     color: white;
     text-align: side;
+    
 }
+
 
 
