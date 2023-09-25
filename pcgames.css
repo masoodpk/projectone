@@ -1,42 +1,154 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 body{
-    background-color: rgb(44, 34, 34);
+  
+    background-image:url(222.jpg);
+
 }
 
 
 * {
   font-family: Open Sans;
-}
-#div1{
-  background-color: blue;
-  width: 300px;
-  height: 250px;
-}
-#div2{
-  background-color:red;
-  width: 300px;
-  height: 250px;
-
 
 }
-#div3{
 
-  background-color: green;
-  width: 300px;
-  height: 250px;
   
+
+.footer{
+  margin: 0;
 }
 
 .footer-links{
   color:  #ffffff;
   margin: 20px 0 12px;
   padding: 0;
+  background-color: black;
+
+
 }
 
-.footer-links a{
-  display:inline-block;
-  line-height: 1.8;
-  font-weight:400;
-  text-decoration: none;
-  color:  inherit;
+
+
+                                      /* ALIGNMENT OF RIGHT SIDE SMALL GAME BOX */
+.main-box{
+
+  width :350px;
+  height: 750px;
+  float: right;
+  cursor : pointer;
+
+}
+                                                   /* LEFT SIDE TEXT GAMES LIST */
+.heading{
+  
+  border-radius:20px;
+  /* border:5px solid 92a8d1; */
+  margin-top:10px;
+  margin-left: 10px;
+  padding-top:10px;
+  padding-left:20px;
+  width: 360px;
+  height: 709px;
+ float: left;
+ transition:1s;
+ text-transform: uppercase;
+
+ color:#fff;
+ box-shadow: 5px 5px 10px #555;
+
+
+}
+.heading li{
+  transition:.5s;
+}
+                                   /* LIST HEADING HOVER EFFECT */
+
+.heading li:hover{
+  scale:1.1;transition:.5s;
+  cursor:pointer;
+  color:red;
+}
+
+.vedio{
+  /* padding-left:110px; */
+  /* background-color:green; */
+  margin-top:30px !important;
+  /* background-color: rgba(0, 0, 0, 0.5); !important; */
+  /* width:  auto; */
+  /* height: 730px; */
+  /* margin-left: 50px !important; */
+  /* border:5px solid #a2b9bc; */
+  border-radius:20px;
+  
+}
+
+
+
+.walpaper{
+    margin-top: 20px;
+ transition:1s;
+  height: 351px; width: 709px;
+  border-radius:20px;
+  margin-left: 30px;
+  box-shadow: 5px 5px 10px #555;
+}
+.walpaper:hover{
+  /* scale:1.1; */
+  cursor:pointer;
+  
+}
+                                                            /* navbar */
+#nab{
+  background-color: rgba(0, 0, 0, 0.5); !important;
+  color:#fff !important;
+  box-shadow: 5px 5px 10px #555;
+                                                           /* FOOTER BUT NOT USING  */
+}
+.footer{
+  margin-top: 260px;
+  height:110px;
+  background-color: rgba(255, 0, 0, 0.5); important;
+}
+
+                                                              /* YOU TUBE VEDIO */
+.vedio iframe:hover{
+  scale:1.1
+}
+.vedio iframe{
+  margin-left: 30px;
+  transition:1s;
+  box-shadow: 5px 5px 10px #555;
+}
+
+
+                                                               /* CARD */
+.card{
+  margin-top:30px;
+  border-radius:20px;
+  box-shadow: 8px 8px 10px #555;
+  transition:1S;
+  /* border:3px solid #fff; */
+  /* border-color: red; */
+  background-color:rgba(10, 18, 36,0.8);
+}
+.card img{
+  border-radius:20px;
+  
+}
+.card:hover{
+  scale:1.1;
+}
+.card-body{
+  background-color: rgba(10, 18, 36,0.8);
+
+
+  border-radius:15px;
+  height: 145;
+
+
+}
+.card-title{
+  color:#fff;
+}
+.card-text{
+  color:#fff
 }
