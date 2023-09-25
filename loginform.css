@@ -11,11 +11,10 @@ body{
 .loginform{
     background-color: white;
     width: 30%;
-    height: 40%;
+    height: 70%;
     margin: 7% auto;
     padding: 25px 18px;
     background: transparent;
-    position: center;
 }
 @media screen and (max-width=600px)
 {
