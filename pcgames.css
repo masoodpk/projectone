@@ -1,154 +1,149 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+
+}
+
+
 body{
-  
-    background-image:url(222.jpg);
+    margin: 0;
+    background-color: rgb(44, 37, 37);
 
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+}
+header{
+ position: absolute;
+ top: 0;
+ width: 100%;
+ padding: 30px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;   
+}
+header h2{
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;top:10px;
+    color: #f00;
+    font-family: 'Eczar', serif;
+}
+header h2:hover{
+    color: #fff;
+    transition: 0.05s;
+}
+ul{
+    position: absolute;left:500px;
+    bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
+ul li{
+    position: relative;
+   
+    list-style: none;
+}
+ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 50px;
+    background: rgb(172, 172, 172);
+    color: #333;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-radius:7px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    background: #f00;
+    color:rgb(255, 249, 249);
+}
+.ul li a:hover{
+    color: #f00;
+}
+.imgscroll{
+    position: absolute;top:120px;
+    left: 0;
+    padding: 60px 0;
+    width: 100%;
+    display: flex;
+    overflow-x:hidden;
+    
+ 
+}
+.imgscroll div{
+    display: flex;
+    animation: animate 40s linear infinite;
+    animation-delay:-40s ;
+    
+}
+.imgscroll div:nth-child(2)
+{
+    animation:animate2 40s linear infinite ;
+    animation-delay:-20s ;
+    border-radius: 10px;
+}
+.imgscroll:hover div,
+.imgscroll:hover div:nth-child(2)
+{
+ animation-play-state: paused;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateX(0%);
+    }
+    100%
+    {
+      transform: translateX(-200%);  
+    }
 }
 
 
-* {
-  font-family: Open Sans;
-
+.imgscroll div img{
+    margin: 0 25px;
+    max-width: 300px;
+    border: 10px solid transparent;
+    transition: 0.25s;
+    border-radius: 10px;
 }
-
-  
-
-.footer{
-  margin: 0;
+.imgscroll div img:hover{
+    border:4px solid rgb(248, 102, 102);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
-
-.footer-links{
-  color:  #ffffff;
-  margin: 20px 0 12px;
-  padding: 0;
-  background-color: black;
-
-
+.imgscroll:hover div img{
+    opacity: 0.05;
+    filter: blur(0px);
 }
-
-
-
-                                      /* ALIGNMENT OF RIGHT SIDE SMALL GAME BOX */
-.main-box{
-
-  width :350px;
-  height: 750px;
-  float: right;
-  cursor : pointer;
-
-}
-                                                   /* LEFT SIDE TEXT GAMES LIST */
-.heading{
-  
-  border-radius:20px;
-  /* border:5px solid 92a8d1; */
-  margin-top:10px;
-  margin-left: 10px;
-  padding-top:10px;
-  padding-left:20px;
-  width: 360px;
-  height: 709px;
- float: left;
- transition:1s;
- text-transform: uppercase;
-
- color:#fff;
- box-shadow: 5px 5px 10px #555;
-
-
-}
-.heading li{
-  transition:.5s;
-}
-                                   /* LIST HEADING HOVER EFFECT */
-
-.heading li:hover{
-  scale:1.1;transition:.5s;
-  cursor:pointer;
-  color:red;
-}
-
-.vedio{
-  /* padding-left:110px; */
-  /* background-color:green; */
-  margin-top:30px !important;
-  /* background-color: rgba(0, 0, 0, 0.5); !important; */
-  /* width:  auto; */
-  /* height: 730px; */
-  /* margin-left: 50px !important; */
-  /* border:5px solid #a2b9bc; */
-  border-radius:20px;
-  
+.imgscroll div img:hover{
+    opacity: 1;
+    filter: blur(0px); 
 }
 
 
 
-.walpaper{
-    margin-top: 20px;
- transition:1s;
-  height: 351px; width: 709px;
-  border-radius:20px;
-  margin-left: 30px;
-  box-shadow: 5px 5px 10px #555;
-}
-.walpaper:hover{
-  /* scale:1.1; */
-  cursor:pointer;
-  
-}
-                                                            /* navbar */
-#nab{
-  background-color: rgba(0, 0, 0, 0.5); !important;
-  color:#fff !important;
-  box-shadow: 5px 5px 10px #555;
-                                                           /* FOOTER BUT NOT USING  */
-}
-.footer{
-  margin-top: 260px;
-  height:110px;
-  background-color: rgba(255, 0, 0, 0.5); important;
-}
-
-                                                              /* YOU TUBE VEDIO */
-.vedio iframe:hover{
-  scale:1.1
-}
-.vedio iframe{
-  margin-left: 30px;
-  transition:1s;
-  box-shadow: 5px 5px 10px #555;
-}
-
-
-                                                               /* CARD */
-.card{
-  margin-top:30px;
-  border-radius:20px;
-  box-shadow: 8px 8px 10px #555;
-  transition:1S;
-  /* border:3px solid #fff; */
-  /* border-color: red; */
-  background-color:rgba(10, 18, 36,0.8);
-}
-.card img{
-  border-radius:20px;
-  
-}
-.card:hover{
-  scale:1.1;
-}
-.card-body{
-  background-color: rgba(10, 18, 36,0.8);
-
-
-  border-radius:15px;
-  height: 145;
-
-
-}
-.card-title{
-  color:#fff;
-}
-.card-text{
-  color:#fff
-}
